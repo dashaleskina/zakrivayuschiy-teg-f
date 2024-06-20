@@ -20,7 +20,7 @@
   padding-top: 100px;
 
   font-family: var(--main-font);
-  font-variation-settings: var(--main-font-weight-text);
+  font-variation-settings: "wght" var(--main-font-weight-text);
   color: var(--accent-color);
 
   background-color: var(--main-background-color);
@@ -43,6 +43,10 @@
 .logo {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   margin: 136px 0 20px;
+}
+
+.logo:focus {
+  outline: none;
 }
 
 .header-title {
@@ -200,7 +204,7 @@
   top: 25px;
   z-index: 1;
   opacity: 0.5;
-  mix-blend-mode: 0.5;
+  mix-blend-mode: hard-light;
   font-size: 14px;
   font-family: var(--accent-font);
   line-height: normal;
@@ -213,6 +217,8 @@
 ) {
   .card-label {
     -webkit-text-stroke: 1px var(--label-stroke-color);
+    text-stroke: 1px var(--label-stroke-color);
+    text-shadow: none;
   }
 }
 
@@ -221,6 +227,7 @@
   justify-content: end;
   align-items: stretch;
   padding: 0 25px 23px 0;
+  gap: 3px;
 }
 
 .card__icon-button {
@@ -274,6 +281,10 @@
   mix-blend-mode: difference;
 }
 
+.submit_button {
+  text-transform: uppercase;
+}
+
 .button:focus {
   outline: none;
 }
@@ -302,7 +313,7 @@
   transform: scaleX(1);
 }
 
-.footer {
+.save-button-block {
   display: grid;
   gap: 55px;
   justify-items: center;
@@ -332,7 +343,7 @@
   flex-shrink: 0;
 }
 
-.modal {
+.modal[open] {
   max-inline-size: 355px;
   padding: 30px;
   border: 2px solid var(--accent-color);
@@ -414,5 +425,10 @@
   .save-button-icon {
     height: 28px;
     width: 28px;
+  }
+
+  .card-label {
+    right: 12px;
+    top: 22px;
   }
 }

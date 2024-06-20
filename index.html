@@ -19,7 +19,7 @@
   <body class="page">
     <!-- HEADER  -->
     <header class="header card">
-      <div class="logo">&lt;/HTML&gt;</div>
+      <a class="logo">&lt;/HTML&gt;</a>
       <h1 class="header-title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -611,36 +611,35 @@
           </button>
         </div>
       </article>
-    </main>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <button
-        type="button"
-        onclick="window.modal.showModal();"
-        aria-controls="modal"
-        class="button save-button"
-      >
-        <svg class="save-button-icon" viewBox="0 0 29 28">
-          <use href="svg/diskette.svg#diskette" />
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-
-      <dialog class="modal" id="modal">
-        <div class="modal-box">
-          <svg class="modal-save-icon" viewBox="0 0 29 28">
+      <section class="save-button-block">
+        <button
+          type="button"
+          onclick="window.modal.showModal();"
+          aria-controls="modal"
+          class="button save-button"
+        >
+          <svg class="save-button-icon" viewBox="0 0 29 28">
             <use href="svg/diskette.svg#diskette" />
           </svg>
-          <p class="modal-title">Вставьте дискету, чтобы продолжить</p>
-        </div>
-        <form method="dialog">
-          <button type="submit" class="modal-save-button button">
-            <span class="button__text">OK</span>
-          </button>
-        </form>
-      </dialog>
-    </footer>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+
+        <dialog class="modal" id="modal">
+          <div class="modal-box">
+            <svg class="modal-save-icon" viewBox="0 0 29 28">
+              <use href="svg/diskette.svg#diskette" />
+            </svg>
+            <p class="modal-title">Вставьте дискету, чтобы продолжить</p>
+          </div>
+          <form method="dialog">
+            <button type="submit" class="modal-save-button button">
+              <span class="button__text submit_button">ок</span>
+            </button>
+          </form>
+        </dialog>
+      </section>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

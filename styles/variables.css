@@ -2,7 +2,7 @@
 :root {
   /* шрифты */
   --main-font: "Inter", sans-serif;
-  --accent-font: "PressStart2P", monospace;
+  --accent-font: "PressStart2P", fantasy;
 
   /* веса шрифтов для карточки - заголовок + основной текст */
   --main-font-weight-header: 700;
