@@ -145,6 +145,7 @@
   line-height: normal;
   padding: 5px 10px;
   border-bottom: 2px solid var(--accent-color);
+  font-variation-settings: "wght" var(--main-font-weight-header);
 }
 
 .card-image {
